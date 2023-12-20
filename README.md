@@ -31,6 +31,14 @@ dnf --disablerepo '*' --enablerepo=extras swap centos-linux-repos centos-stream-
 dnf distro-sync
 ```
 
+## Network
+
+### Squid http_proxy
+
+```bash
+podman run -d -p 3128:3128 --name squid ubuntu/squid
+```
+
 ## Kubernetes
 
 ### Docs CRDs
